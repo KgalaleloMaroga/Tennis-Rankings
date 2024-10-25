@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tennis Rankings</h1>
+        
+        <div class="toggle">
+            <label class="switch">
+                <input type="checkbox" id="toggleButton">
+                <span class="slider"></span>
+            </label>
+            <span id="toggleLabel">Show WTA</span>
+        </div>
+
+        <div class="rankings">
+            <div id="atpSection">
+                <h2>ATP Top 10</h2>
+                <table id="atpTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                            <th>Points</th>
+                            <th>Last Tournament</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ATP Players will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="wtaSection" style="display: none;">
+                <h2>WTA Top 10</h2>
+                <table id="wtaTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                            <th>Points</th>
+                            <th>Last Tournament</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- WTA Players will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
